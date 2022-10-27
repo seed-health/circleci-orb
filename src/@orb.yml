@@ -5,8 +5,8 @@ description: |
   If recording on the dashboard, set `CYPRESS_RECORD_KEY` as CI environment variable.
 
 display:
-  source_url: https://github.com/cypress-io/circleci-orb
-  home_url: https://www.cypress.io
+  home_url: "https://github.com/seed-health/circleci-orb"
+  source_url: "https://github.com/seed-health/circleci-orb"
 
 #
 # See https://www.cypress.io/
