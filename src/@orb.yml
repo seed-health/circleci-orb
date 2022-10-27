@@ -596,11 +596,11 @@ jobs:
           # hmm, can we detect if this job requires cypress/install automatically?
           steps:
             - run: echo "Assuming dependencies were installed using cypress/install job"
+            - attach_workspace:
+                at: ~/
             - restore_cache:
                 keys:
                   - << parameters.cache-key >>
-            - attach_workspace:
-                at: ~/
 
       - unless:
           condition: << parameters.parallel >>
